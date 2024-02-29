@@ -1,0 +1,497 @@
+body{
+    margin: 0;
+    font-family: 'Monterrat', sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0  auto;   
+}
+.container1{
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    top: 19px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: rgb(48, 48, 48);
+}
+.container2{
+        height: 100px;
+        max-width: 800px;
+        position: absolute;
+        top: -75px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+     
+}
+
+.container3{
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    top: 360px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    
+    background: rgb(48, 48, 48);
+}
+.conteinerleft{
+    position: absolute;
+    top: 210px; 
+    right: calc(73% - 20px - 30px); 
+}
+.conteinerright{
+    position: absolute;
+    top: 210px; 
+    left: calc(74% - 30px - 30px); 
+    max-height: 100px;
+}
+.left img{
+    position: absolute;
+    max-width: 70px;
+    max-height: 65px;
+    
+}
+.right img{
+    
+    max-width: 70px;
+    max-height: 65px;
+    transform: scaleX(-1);
+}
+.footer{
+    width: 100%;
+    max-width: 750px;
+    position: absolute;
+    top: 720px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 78vh;
+    background-color: rgb(19, 17, 17);
+   
+    background-size: cover;
+}
+
+@import url(https://db.onlinewebfonts.com/c/a9f373cd848c81fa666007b98058e8cb?family=Kestrel+Script+Regular);
+@font-face {
+    font-family: "Kestrel Script Regular";
+    src: url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.eot");
+    src: url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a9f373cd848c81fa666007b98058e8cb.svg#Kestrel Script Regular")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/ffb32dd2f48d043622e9012abf0fda8c?family=Gill+Display+Compressed+Std);
+@font-face {
+    font-family: "Gill Display Compressed Std";
+    src: url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.eot");
+    src: url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ffb32dd2f48d043622e9012abf0fda8c.svg#Gill Display Compressed Std")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/353b79b2ea9db02690b55e55fb094e08?family=Bold);
+@font-face {
+    font-family: "Bold";
+    src: url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.eot");
+    src: url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/353b79b2ea9db02690b55e55fb094e08.svg#Bold")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/32d69d6f529c1e2d98a3993e278e5521?family=PT+Sans);
+@font-face {
+    font-family: "PT Sans";
+    src: url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.eot");
+    src: url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/32d69d6f529c1e2d98a3993e278e5521.svg#PT Sans")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+@font-face {
+    font-family: "Regular";
+    src: url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.eot");
+    src: url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e695a2b548e145591a266fc50eb492e0.svg#Regular")format("svg");
+}
+.intro__inner{
+    max-width: 305px;
+    margin: -100 auto;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+}
+.inner__menu{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intro__title{
+    color: rgb(255, 171, 46);
+    font-size: 50px;
+    font-family: "Kestrel Script Regular";
+    font-weight: 10;
+    text-transform:capitalize;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.intro__downtitle{
+    font-family: "Gill Display Compressed Std";
+    font-weight: lighter;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    margin-top: -10px;
+}
+.intro__menu{
+    margin: 0 15px;
+    font-family: "Bold";
+    font-size: 10px;
+}
+.intro__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.header{
+    width: 100%;
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__iner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.nav{
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(165, 164, 164);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    transition: color .1s linear;
+    position: relative;
+    margin-left: 10px;
+}
+.nav__link1{
+    vertical-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 10px; 
+   
+
+}
+.nav__link1:hover{
+    color: black;
+    background: white;
+}
+.nav__link::after{
+    content: "";
+    display: block;
+    width: 100%;
+
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover{
+    color: white;
+}
+.nav__link:hover::after{
+    opacity: 1;
+}
+.nav__link2{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+   max-height: 600px
+   ;
+}
+.nav__link3{
+    text-decoration: none;
+    color:white;
+    font-size: 10px;
+    max-height: auto;
+    width: 70%;
+   
+   
+}
+
+
+.con2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.qweq{
+    color: white;
+    font-size: 13px;
+}
+.qweqw{
+    color: white;
+    font-size: 13px;
+ 
+    position: absolute;
+    top: 285px;
+}
+
+.nav__link4{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+    background-color: black;
+    max-height: auto;
+   font-family: "PT-Sans";
+}
+.nav__link5{
+    
+    color:white;
+    font-size: 14px;
+    width: 300px;
+}
+.nav__link6 img{
+    margin-top: 5px;
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.nav__link7{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cross_photo{
+    
+    width: 85%;
+    height: 600px;
+    margin: 0  auto;   
+
+    display: flex;  
+    justify-content: space-between;
+}
+
+.cross_photo img{
+    max-width: 100%;
+    max-height: 70%
+    
+}
+.content{
+    width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.footer{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.footer__con{
+    width: 100%;
+    height: 0px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.left-content {
+    display: flex;
+}
+
+.right-content {
+    display: flex;
+}
+
+.microheadder{
+    font-size: 30px;
+    color: white;
+    font-family: "Regular";
+    font-weight: lighter;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 250px;
+}
+
+.whyus{
+    margin-left: 10px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+.container2{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 80px; 
+    left: 530PX; 
+    transform: translateX(-50%); 
+}
+.conteinerleft, .conteinerright {
+    display: none;
+}
+
+    
+    .intro {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 17, 17);
+   
+    background-size: cover;
+    }
+    
+    .intro__inner {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        margin-left: 4%;
+    }
+    
+    
+    .intro__title {
+        font-size: 30px;
+    }
+    
+    .intro__downtitle {
+        font-size: 8px;
+       margin-top: -2px;
+    }
+    
+    .intro__menu {
+        margin: 0 auto;
+        margin-right: 40px;
+    }
+    
+    .nav__link1 {
+        font-size: 14px;
+    }
+    
+    .cross_photo {
+        height: auto;
+        flex-direction: row;
+        margin-left: -100px;
+        max-height: 100px;
+    }
+    
+    .cross_photo img {
+        max-width: 100%;
+        max-height: 300px;
+       
+    }
+    .container3{
+        position: absolute;
+        top: 330px;
+    }
+    
+    .content {
+        flex-direction: row;
+        height: auto;
+
+    }
+    
+    .microheadder {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        position: absolute;
+        top: 670px;
+    }
+    
+    .footer__con {
+        flex-direction: row;
+       
+    }
+   
+    
+
+    
+    .nav__link5 {
+        width: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .nav__link6 img {
+        margin: 5px;
+    }
+}
